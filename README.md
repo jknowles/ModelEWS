@@ -1,0 +1,2 @@
+# ModelEWS
+A repository showing an example of integrating a machine learning based dropout early warning system into a data warehouse workflow. Includes all aspects from data system connection/authentication, to data acquisition, data cleaning, data transformation, model training, model selection, prediction,and finally export. Based on the system in production currently at the Wisconsin Department of Public Instruction
