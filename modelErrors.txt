@@ -1,0 +1,48 @@
+lda2 fails - fixed
+bag fails - not fixed, remove
+plr fails - remove
+pam times out - OK
+ORFridge times out
+ORFpls times out
+ORFlog times out
+hda fails - fixed
+Boruta times out
+gaussprLinear times out
+gaussprPoly times out
+mlp fails - fixed
+mlpWeightDecay - takes forever
+rbf fails - fixed
+rf fails - fixed
+rpart2 fails - fixed
+RRF fails - fixed, takes forever, skip
+RRFglobal fails - fixed, takes forever, skip
+logitBoost fails - claims not classification, check
+sddaLDA
+sddaQDA
+sda -?
+rpart fails - why?
+stepLDA fails - why?
+
+##########
+# Test extraction for
+
+bdk
+stepLDA
+sddaQDA
+sddaLDA
+hda
+lda
+lda2 
+treebag generates a perfect fit?
+
+
+# hda, lda, lda2 fail because of predictor mismatch when dropping column 
+# in train and not in test data
+
+FAIL:
+rda
+sda
+sddaLDA
+sddaQDA
+bdk
+bagEarth runs out of RAM

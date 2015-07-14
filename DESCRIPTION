@@ -1,0 +1,20 @@
+Package: DEWS
+Title: Wisconsin Dropout Early Warning System
+Date: 2015-02-18
+Version: 1.0
+Authors@R: c(person(c("Jared", "E."), "Knowles", email = "jared.knowles@dpi.wi.gov",
+    role = c("aut", "cre")))
+Description: An implementation of a machine learning based dropout early warning system. 
+Depends:
+  R (>= 3.0.2),
+  caret,
+  pROC,
+  plyr
+Import:
+  RODBC,
+  DMwR,
+  arm,
+  doParallel
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr

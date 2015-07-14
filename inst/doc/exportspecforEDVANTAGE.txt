@@ -1,0 +1,23 @@
+Export for Jeff
+
+1. Student risk identification date (date the calculation is run)
+2. Student risk expiration date (expire 365 days later)
+3. STUDENT_RISK_STATUS (Active, Pending, Inactive), all students start as active
+Each year marks prior year as inactive
+4. STUDENT_RISK_SEVERITY_SCORE = DEWS score (higher score is lower risk for graduation)
+5. STUDENT_RISK_OUTCOME = character (h, m, l)
+5. STUDENT_RISK_MEASURE_VALUES (numerics for subscores) -- can figure out how to draw from other tables where necessary, consider auditing data used in calculation against Edvantage
+6. STUDENT_RISK_REPORT_TEXT[1 and 2] = text label for the categories of the risk (l, m, h)
+7. STUDENT_RISK_NOTES = text string for individual row (2000 characters max)
+8. Store the model version in the file
+
+WSN, GRADE, DEWS SCORE, PRECISION, Subscore 1, Subscore 1 Label, ... GLM model, Date, 
+
+# export as CSV -- avoid commas in the data
+
+Where do subscores come from in Edvantage, and what column should they be in
+
+For missing data (students who do not receive a score):
+- STUDENT_RISK_OUTCOME (high, low, medium, NO SCORE?) # think about the text here
+
+IN CSV replace all NA with empty strings
